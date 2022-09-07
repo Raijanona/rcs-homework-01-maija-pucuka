@@ -1,0 +1,83 @@
+* {
+    font-family: 'Space Mono';
+}
+
+body {
+    color: rgb(26, 18, 7);
+}
+
+.page
+    &1 {
+        background-color: rgb(61, 35, 10);
+}
+
+    &2 {
+    padding: 0px;
+    margin: 0px;
+    background: linear-gradient(90deg, rgb(228, 181, 27), rgb(54, 42, 2), rgb(228, 181, 27), rgb(54, 42, 2));
+    background-size: 1000% 100%;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    animation: gradientChange 8s infinite;
+}
+
+.box {
+    background-color: rgba(240, 181, 104, 0.959);
+    margin: 30px;
+    &--divider {
+        background-color: rgb(61, 35, 10);
+        height: 20px;
+        margin: 30px;
+    }
+}
+
+.header__paragraph {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(61, 35, 10);
+}
+
+.image {
+    width: 340px;
+    height: 380px;
+    margin: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: brown;
+    &:hover {
+        color: rgb(241, 218, 111);
+    }
+}
+
+button {
+    margin-bottom: 20px;
+    background-color: rgb(241, 218, 111);
+    border: 1px solid rgb(241, 218, 111);
+    transition: color 0.3s ease-in, background-color 0.3s ease-in;
+    &:hover {
+        background-color: brown;
+    }
+}
+
+.money {
+    color: green;
+    font-weight: bold;
+}
+
+.footer__parapgraph {
+    color: white;
+}
+
+@keyframes gradientChange {
+    0% {
+      background-position-x: 0%;
+    }
+    50% {
+      background-position-x: 100%;
+    }
+    100% {
+      background-position-x: 0%;
+    }
+}
